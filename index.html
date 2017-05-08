@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Кеня | Портфолио</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="KoNNoS, konnos, kenya, кеня, Кеня" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- js -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- js -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<style>
+   @font-face {
+    font-family: one; /* Имя шрифта */
+    src: url(fonts/Yan.ttf); /* Путь к файлу со шрифтом */
+   }
+   P, h1, h2, h3 {
+    font-family: one;
+   }
+  </style>
+</head>
+<body>
+<div id="home" class="banner">
+	<div class="container">
+		<div class="banner-info text-center">
+			<img src="images/logo.png" alt=""/>
+			<h2>Приветствую тебя на моем сайте!</h2>
+			<h1>@konnos</h1>
+			<h2>Сделано на bootstrap</h2>
+			<div class="learnmore"><a href="https://vk.com/" class="hvr-sweep-to-right button">Свалить сразу с сайта -.-</a></div>
+			<div class="arrow-icon"><a class="scroll" href="#about"><img src="images/3.png" alt=" "/></a></div>
+		</div>
+	</div>
+</div>
+<div class="navigation">
+	<div class="wrap">
+		<div class="fixed-header">
+			<div class="nav-left">
+				<a href="#"><img src="images/logo2.png" alt=""/></a>
+			</div>
+			<div class="nav-right">
+				<span class="menu"><img src="images/menu.png" alt="" /></span>
+					<nav class="cl-effect-1">
+						<ul class="nav1" style="padding-left: 250px;">
+							<li><a class="scroll" href="#home">Главная</a></li>
+							<li><a class="scroll" href="#about">Обо мне</a></li>
+							<li><a class="scroll" href="#what-we-do">Ссылки</a></li>
+							<li><a class="scroll" href="#portfolio">Фотографии</a></li>
+						</ul>
+					</nav>
+							<script> 
+								$( "span.menu" ).click(function() {
+								$( "ul.nav1" ).slideToggle( 300, function() {
+								});
+								});
+							</script>
+						<script>
+						$(document).ready(function() {
+							 var navoffeset=$(".navigation").offset().top;
+							 $(window).scroll(function(){
+								var scrollpos=$(window).scrollTop(); 
+								if(scrollpos >=navoffeset){
+									$(".navigation").addClass("fixed");
+								}else{
+									$(".navigation").removeClass("fixed");
+								}
+							 });
+							 
+						});
+						</script>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<div id="about" class="about">
+	<div class="container">
+		<div class="col-md-7 about-left">
+			<h3>Немножко обо мне</h3>
+			<div class="strip"></div>
+			<h2>Островский Никита (Кеня)</h2>
+			<p>Честно, я не знаю для чего я делаю всю эту хрень, но я хочу. Если я хочу, я добиваюсь, вот так вот.</p>
+			<p>Ниже ты можешь ознакомиться с моими страницами в соц. сетях, или же просмотреть мой instagram. Посмотреть во что я играю в steam.</p>
+			<p>А еще ниже будут мои последние (по моему мнению клевые) фотографии.</p>
+		</div>
+		<div class="col-md-5 about-right text-center">
+			<img src="images/5.png" alt="" />
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div id="what-we-do" class="what-we-do">
+	<div class="container">
+		<div class="what-info">
+			<h3>Мои никому ненужные странички *-*</h3>
+			<div class="strip"></div>
+			<p>Наведи на них, и они будут прикольно крутиться. Круто, не правда ли? Самому нравится.</p>
+		</div>
+		<div class="what-grids">
+			<div class="col-md-3 what-grid text-center">
+				<a href="https://vk.com/" target="_blank"><div class="vk-icon"></div></a>
+				<h3>ВКонтакте</h3>
+				<div class="border"></div>
+				<p>Основное место я провожу больше всего времени.</p>
+			</div>
+			<div class="col-md-3 what-grid text-center">
+				<a href="https://www.instagram.com/konnos.png/" target="_blank"><div class="inst-icon"></div></a>
+				<h3>Instagram</h3>
+				<div class="border"></div>
+				<p>Ну, а тут можно еще больше узнать о моей жизни.</p>
+			</div>
+			<div class="col-md-3 what-grid text-center">
+				<a href="https://steamcommunity.com/id/konnos/" target="_blank"><div class="steam-icon"></div></a>
+				<h3>Steam</h3>
+				<div class="border"></div>
+				<p>О да, это то место куда вливаются деньги ради развлечений.</p>
+			</div>
+			<div class="col-md-3 what-grid text-center">
+				<a href="https://twitter.com/konnos_no" target="_blank"><div class="tw-icon"></div></a>
+				<h3>Twitter</h3>
+				<div class="border"></div>
+				<p>А на эту хрень я захожу редко, можно почитать новости, но почти ничего не пишу.</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<div id="portfolio" class="portfolio">
+	<div class="portfolios entertain_box  wow fadeInUp" data-wow-delay="0.4s" id="project">
+		<div class="container">
+			<div class="portfolio-info">
+				<h3>О, фотокарточки подъехали</h3>
+				<div class="strip"></div>
+				<p>Ну, а сюда я постараюсь сливать свои фотографии.</p>
+			</div>
+		</div>
+					<ul id="filters" class="clearfix">
+							<li><span class="filter active" data-filter="vk inst">Все</span></li>
+							<li><span class="filter" data-filter="vk">ВКонтакли</span></li>
+							<li><span class="filter" data-filter="inst">Instagram</span></li>
+					</ul>
+		
+					<div id="portfoliolist">
+						<div class="portfolio vk mix_all" data-cat="vk" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="images/vk/vk1.jpg" class="b-link-stripe b-animate-go   swipebox"  title="">
+								<img class="img-responsive" src="images/vk/vk11.jpg" />
+								<div class="b-wrapper">
+								<h2 class="b-animate b-from-left    b-delay03 ">
+									<img class="img-responsive" src="images/e.png" class="zoom" alt=""/>
+								</h2>
+								<h3><font color="white">Дебил и камера</font></h3>
+								<p>ВКонтакли</p>
+								</div></a>
+							</div>
+						</div>				
+						<div class="portfolio vk mix_all" data-cat="vk" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="images/vk/vk2.jpg" class="b-link-stripe b-animate-go   swipebox"  title="">
+								<img class="img-responsive" src="images/vk/vk22.jpg" />
+								<div class="b-wrapper">
+								<h2 class="b-animate b-from-left    b-delay03 ">
+								<img class="img-responsive" src="images/e.png" class="zoom" alt=""/></h2>
+								<h3><font color="white">ерок</font></h3>
+								<p>ВКонтакли</p>
+								</div></a>
+							</div>
+						</div>		
+
+						<div class="clearfix"></div>
+					</div>
+		
+	</div>
+			<link rel="stylesheet" href="css/swipebox.css">
+				<script src="js/jquery.swipebox.min.js"></script> 
+					<script type="text/javascript">
+						jQuery(function($) {
+							$(".swipebox").swipebox();
+						});
+					</script>
+				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+					$(function () {
+						var filterList = {
+							init: function () {
+								// MixItUp plugin
+							// http://mixitup.io
+							$('#portfoliolist').mixitup({
+								targetSelector: '.portfolio',
+								filterSelector: '.filter',
+								effects: ['fade'],
+								easing: 'snap',
+								// call the hover effect
+								onMixEnd: filterList.hoverEffect()
+							});	
+						},
+						hoverEffect: function () {
+							// Simple parallax effect
+							$('#portfoliolist .portfolio').hover(
+								function () {
+									$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+									$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+								},
+								function () {
+									$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+									$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+								}		
+							);				
+						}
+					};
+						filterList.init();
+					});	
+					</script>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="footer-left">
+			<p>Copyright &copy; 2017 KoNNoS.</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+</body>
+</html>
